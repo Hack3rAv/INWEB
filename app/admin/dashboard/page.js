@@ -1,3 +1,5 @@
+"use client";
+
 import AdminCard from "@/components/AdminCard";
 
 export default function AdminDashboard() {
@@ -22,3 +24,4 @@ export default function AdminDashboard() {
         </section>
     );
 }
+
