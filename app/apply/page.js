@@ -1,3 +1,5 @@
+"use client";
+
 import FormCard from "@/components/FormCard";
 import SectionWrapper from "@/components/SectionWrapper";
 
@@ -43,3 +45,4 @@ export default function Apply() {
         </SectionWrapper>
     );
 }
+
