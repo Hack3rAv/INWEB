@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "echo Prisma skipped (frontend phase)"
+    "postinstall": "echo \"Prisma skipped - frontend phase\""
 
   },
   "dependencies": {
@@ -33,3 +33,4 @@
     "tailwindcss": "^3.4.1"
   }
 }
+
