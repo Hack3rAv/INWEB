@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT */
+html, body {
+    background: #000;
+    color: white;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* GLOBAL VARIABLES */
+:root {
+    --primary: #ff002f;
+    --primary-glow: rgba(255, 0, 47, 0.6);
+    --glass-bg: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* LAYOUT HELPERS */
+.main-content {
+    padding-top: 90px; /* navbar spacing */
+}
+
+/* LINKS */
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 34px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px var(--primary-glow);
+}
+
+.btn.secondary {
+    border: 1px solid var(--glass-border);
+    background: transparent;
+    color: #fff;
+}
+
+.btn.secondary:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* HOMEPAGE WRAPPER */
+.home-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HERO */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.hero-title span {
+    color: var(--primary);
+    text-shadow: 0 0 20px var(--primary-glow);
+}
+
+.hero-subtitle {
+    margin-top: 16px;
+    font-size: 18px;
+    opacity: 0.75;
+}
+
+.hero-buttons {
+    margin-top: 36px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 20px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* STATUS */
+.status-section {
+    padding-top: 40px;
+}
+
+.status-card {
+    max-width: 420px;
+    margin: auto;
+    padding: 24px 28px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+}
+
+.status-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.status-row:last-child {
+    margin-bottom: 0;
+}
+
+.status-value.offline {
+    color: #ff3b3b;
+}
+
+/* STEPS */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.step-card {
+    padding: 32px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.step-number {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.step-card h3 {
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.step-card p {
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.75;
+}
+
+/* FEATURES */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature-card {
+    padding: 26px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.85;
+}
+
+/* COMMUNITY */
+.community-section {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.community-section p {
+    margin: 14px 0 30px;
+    opacity: 0.75;
+}
+
+.section-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 0, 47, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(255, 0, 47, 0.08);
+}
