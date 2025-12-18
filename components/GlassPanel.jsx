@@ -1,7 +1,9 @@
+"use client";
+
 export default function GlassPanel({ children, className = "" }) {
-    return (
-        <div className={`glass-panel ${className}`}>
-            {children}
-        </div>
-    );
+  return (
+    <div className={`glass-panel ${className}`}>
+      {children}
+    </div>
+  );
 }
